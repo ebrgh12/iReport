@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/littering_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Littering Current Status :"/>
+
+        <TextView
+            android:id="@+id/current_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleared"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Report Status"
+        android:textColor="@android:color/black"
+        android:padding="10dp"/>
+
+    <Spinner
+        android:id="@+id/report_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/littering_status">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/update_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE STATUS"
+        android:layout_gravity="center"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

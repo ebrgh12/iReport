@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen Name"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/screen_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="screen name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:padding="10dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="first name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:padding="10dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="last name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House Address"
+            android:padding="10dp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/house_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="house address"/>
+
+        <Switch
+            android:id="@+id/email_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow email confirmation of any littering report"
+            android:padding="10dp"
+            android:checked="true"/>
+
+        <Switch
+            android:id="@+id/email_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow email notification upon status change"
+            android:padding="10dp"
+            android:checked="true"/>
+
+        <Switch
+            android:id="@+id/anonymous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report anonymously"
+            android:padding="10dp"
+            android:checked="false"/>
+
+        <Button
+            android:id="@+id/save_user_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
