@@ -9,7 +9,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 /**
- * Created by Manoj on 12/1/2016.
+ * Created by Girish on 12/1/2016.
  */
 
 public interface LoginService {

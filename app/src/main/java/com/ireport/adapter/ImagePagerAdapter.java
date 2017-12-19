@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Manoj on 12/6/2016.
+ * Created by Girish on 12/6/2016.
  */
 
 public class ImagePagerAdapter extends PagerAdapter {
